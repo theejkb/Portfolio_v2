@@ -1,18 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+       <CoffeeHeader />
+      <!-- <CoffeeHome />   -->
+      <router-view></router-view>
+
+      <footer class="footer text-faded text-center py-5">
+        <div class="container">
+          <p class="m-0 small">Copyright &copy; Your Website 2020</p>
+        </div>
+      </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import CoffeeHeader   from './components/CoffeeHeader.vue' // 1° import
+ // import CoffeeHome     from './components/CoffeeHome.vue' // 1° import
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+       CoffeeHeader,
+      // CoffeeHome // 2° déclaration
+    },
+    data:()=>({
+        title:'Mon title from data '
+    })
+
 }
 </script>
 

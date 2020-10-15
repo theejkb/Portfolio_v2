@@ -6,13 +6,25 @@ import App       from './App.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-      path: '/home', name:'home',
-      component: () => import('./components/CoffeeHome.vue')
-  },
+    {
+        path: '/', name:'login',
+        component: () => import('./components/LoginLayout.vue')
+    },
+    {
+        path: '/home', name:'home',
+        component: () => import('./components/CoffeeHome.vue')
+    },
+    {
+        path: '/login', name:'login',
+        component: () => import('./components/LoginLayout.vue')
+    },
   {
       path: '/products', name:'products',
       component: () => import('./components/CoffeeProducts.vue')
+  },
+  {
+      path: '/products/:coffeeId', name:'productsDetails',
+      component: () => import('./components/CoffeeProductsDetails.vue')
   },
   {
       path: '/about', name:'about',

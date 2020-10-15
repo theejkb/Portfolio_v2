@@ -2,7 +2,7 @@
   <div id="app">
 
        <CoffeeHeader />
-      <!-- <CoffeeHome />   -->
+     
       <router-view></router-view>
 
       <footer class="footer text-faded text-center py-5">

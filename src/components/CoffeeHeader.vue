@@ -14,21 +14,21 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item active px-lg-4">
+              <li class="px-lg-4">
                 <!-- <a class="nav-link text-uppercase text-expanded" href="index.html">Home
                   <span class="sr-only">(current)</span>
                 </a> -->
-                <router-link class="nav-link text-uppercase text-expanded" to="/home">Home</router-link>
+                <router-link class="text-uppercase text-expanded headerlink " to="/home">Home</router-link>
 
               </li>
-              <li class="nav-item px-lg-4">
-                <router-link class="nav-link text-uppercase text-expanded" to="/about">About</router-link>
+              <li class="px-lg-4">
+                <router-link class="text-uppercase text-expanded headerlink " to="/about">About</router-link>
               </li>
-              <li class="nav-item px-lg-4">
-                <router-link class="nav-link text-uppercase text-expanded" to="/products">Products</router-link>
+              <li class="px-lg-4">
+                <router-link class="text-uppercase text-expanded headerlink " to="/products">Products</router-link>
               </li>
-              <li class="nav-item px-lg-4">
-                <router-link class="nav-link text-uppercase text-expanded" to="/store">Store</router-link>
+              <li class="px-lg-4">
+                <router-link class="text-uppercase text-expanded headerlink " to="/store">Store</router-link>
               </li>
             </ul>
           </div>
@@ -41,18 +41,32 @@
 </template>
 
 <script>
+
+
+
+
 export default {
   name: 'CoffeeHeader',
   props: {
 
   },
   data:()=>({
+  }),
+  methods:{
 
-  })
+  },
+  created() {
+
+  },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+    .router-link-active{
+        color:#e6a756 !important;
+    }
+    .headerlink{
+        color:#fff;
+    }
 </style>

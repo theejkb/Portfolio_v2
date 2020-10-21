@@ -67,7 +67,7 @@
 
 <script>
 export default {
-  name: 'CoffeeStore',
+  name: 'StevenProjects',
   props: {
 
   },

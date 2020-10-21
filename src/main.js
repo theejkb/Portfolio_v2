@@ -2,38 +2,34 @@ import Vue       from 'vue'
 import VueRouter from 'vue-router'
 import App       from './App.vue'
 
-
 Vue.use(VueRouter)
 
 const routes = [
+    // {
+    //     path: '/', name:'login',
+    //     component: () => import('./components/LoginLayout.vue')
+    // },
     {
-        path: '/', name:'login',
-        component: () => import('./components/LoginLayout.vue')
+        path: '/', name:'home',
+        component: () => import('./components/StevenHome.vue'),
+        meta: {
+          transitionName: 'slide'
+        },
     },
-    {
-        path: '/home', name:'home',
-        component: () => import('./components/CoffeeHome.vue')
-    },
-    {
-        path: '/login', name:'login',
-        component: () => import('./components/LoginLayout.vue')
-    },
-  {
-      path: '/products', name:'products',
-      component: () => import('./components/CoffeeProducts.vue')
-  },
-  {
-      path: '/products/:coffeeId', name:'productsDetails',
-      component: () => import('./components/CoffeeProductsDetails.vue')
-  },
   {
       path: '/about', name:'about',
-      component: () => import('./components/CoffeeAbout.vue')
+      component: () => import('./components/StevenAbout.vue'),
+      meta: {
+        transitionName: 'slide'
+      },
   },
   {
-      path: '/store', name:'store',
-      component: () => import('./components/CoffeeStore.vue')
-  }
+      path: '/projects', name:'projects',
+      component: () => import('./components/StevenProjects.vue'),
+      meta: {
+        transitionName: 'slide'
+      },
+  },
 ]
 
 // 3. Create the router instance and pass the `routes` option

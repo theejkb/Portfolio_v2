@@ -7,13 +7,13 @@
         alt="photo de steven copy"
       />
       <div class="aboutme-section-text-intro">
-        <p>Je m'appelle Steven Copy, j'ai 22 ans et je suis au Campus Ynov à Lyon en Mastere Informatique spécialisée en Développement Web.</p>
+        <p>Je m'appelle Steven Copy, j'ai 22 ans et je suis au Campus Ynov à Lyon en Mastere Informatique spécialisé en Développement Web.</p>
         <p>Le domaine de l'Informatique, et particulièrement du Web, correspond entièrement à mes attentes car :</p>
         <ul>
-          <li>ll est très vaste et est en pleine croissance</li>
+          <li>ll est très vaste et en pleine croissance</li>
           <li>Il m'apporte la liberté de reflexion (technologies, langages), de création (détails, couleurs) et d'implémentation (méthodes et outils utilisées, structuration etc.)</li>
-          <li>L'évolution des technologies et des différents Framework m'apporte apprentissage constant</li>
-          <li>La courbe d'apprentissage est casiment infinie, et donc l'apprentissage est nécessaire en permanence</li>
+          <li>L'évolution des technologies et des différents Framework m'apportent un apprentissage constant</li>
+          <li>La courbe d'apprentissage étant casiment infinie, il est nécessaire d'apprendre en permanence</li>
         </ul>
       </div>
       <hr />

@@ -131,8 +131,9 @@ export default {
   width: 100%;
 }
 .router-link-exact-active{
-  border: 2px solid black;
-  background-color: whitesmoke;
+  background-color: #000 !important;
+  color: #fff !important;
+  width: 100% !important;
 }
 
 

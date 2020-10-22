@@ -147,6 +147,7 @@ export default {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #fff; 
+    border-radius: 2px;
 }
 
 /* Track */

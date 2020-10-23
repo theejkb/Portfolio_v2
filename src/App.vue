@@ -18,7 +18,6 @@
 
 
 <script>
-import { TimelineLite, Back, Elastic, Expo } from "gsap"
 
 import StevenNav from "./components/StevenNav.vue"; // 1° import
 
@@ -86,40 +85,8 @@ export default {
     },
   },
   mounted() {
-    const { bubble, bubblePulse } = this.$refs
-    const timeline = new TimelineLite()
-    
-    timeline.to(bubble, 0.4, {
-      scale: 0.8,
-      rotation: 16,
-      ease: Back.easeOut.config(1.7),
-    })   
-    timeline.to(
-      bubblePulse,
-      0.5, 
-      {
-        scale: 0.9,
-        opacity: 1,
-      },
-     '-=0.6' 
-    )
-    
-    this.timeline.to(bubble, 1.2, {
-      scale: 1,
-      rotation: '-=16',
-      ease: Elastic.easeOut.config(2.5, 0.5),
-    })
-    this.timeline.to(
-      bubblePulse,
-      1.1,
-      {
-        scale: 3,
-        opacity: 0,
-        ease: Expo.easeOut,
-      },
-      '-=1.2'
-    )
   }
+    
 };
 </script>
 

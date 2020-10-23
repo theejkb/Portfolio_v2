@@ -15,18 +15,16 @@
     <nav class="navbar">
       <ul>
         <li>
-         
-            <router-link to="/">Accueil</router-link>
-          
+          <router-link to="/">Accueil</router-link>
         </li>
         <li>
-            <router-link to="/about">À propos</router-link>
+          <router-link to="/about">À propos</router-link>
         </li>
         <li>
-            <router-link to="/projects">Mes projets</router-link>
+          <router-link to="/projects">Mes projets</router-link>
         </li>
         <li>
-            <router-link to="/contact">Me contacter</router-link>
+          <router-link to="/contact">Me contacter</router-link>
         </li>
       </ul>
     </nav>
@@ -34,53 +32,23 @@
 </template>
 
 <script>
-import { TimelineLite, Back, Elastic, Expo } from "gsap";
+
+ 
 
 export default {
   name: "StevenHeader",
   props: {},
   data: () => ({
-    timeline: null
+        isRouteABoutMore: false,
   }),
-  methods: {},
-  created() {},
+  created() {   
+  },
   mounted() {
-    const { bubble, bubblePulse } = this.$refs;
-    this.timeline = new TimelineLite({
-      onComplete: () => this.timeline.restart()
-    });
-
-    this.timeline.to(bubble, 0.4, {
-      scale: 0.8,
-      rotation: 16,
-      ease: Back.easeOut.config(1.7)
-    });
-    this.timeline.to(
-      bubblePulse,
-      0.8,
-      {
-        scale: 0.9,
-        opacity: 1
-      },
-      "-=0.6"
-    );
-    this.timeline.to(bubble, 1.2, {
-      scale: 1,
-      rotation: "-=16",
-      ease: Elastic.easeOut.config(2.5, 0.5)
-    });
-    this.timeline.to(
-      bubblePulse,
-      1.1,
-      {
-        scale: 2,
-        opacity: 0,
-        ease: Expo.easeOut
-      },
-      "-=1.2"
-    );
+  },      
+  methods(){  
   }
 };
+
 </script>
 <style>
 .navbar {
@@ -112,7 +80,6 @@ export default {
   transition: all ease 0.3s;
 }
 
-
 .navbar ul li:nth-child(1) a {
   width: 75%;
 }
@@ -130,11 +97,9 @@ export default {
   color: #fff;
   width: 100%;
 }
-.router-link-exact-active{
+.router-link-exact-active {
   background-color: #000 !important;
   color: #fff !important;
   width: 100% !important;
 }
-
-
 </style>

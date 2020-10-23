@@ -23,7 +23,7 @@ const routes = [
       meta: {
         transitionName: 'slide'
       },
-  },
+  },  
   {
       path: '/projects', name:'projects',
       component: () => import('./components/StevenProjects.vue'),

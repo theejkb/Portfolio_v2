@@ -4,6 +4,7 @@
         <div class="home-section-text">
             <h1> Je suis Ste<img class="home-section-text-v" src="../assets/img/vuejs.png"/>en COPY</h1>
             <h4>Etudiant en Développement Web</h4>
+
             
             <!-- <h4>Amateur de League of Legends </h4> -->
         </div>
@@ -18,6 +19,9 @@ export default {
   props: {},
   data: () => ({})
 };
+
+
+  
 </script>
 
 <style>

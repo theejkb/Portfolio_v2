@@ -37,11 +37,13 @@
                 data="SQL"
               />
               </a>
+              <a class="tooltips" data="CSS">
               <img
                 class="grow-rotate2 icon-about"
                 src="../assets/img/icon_css.png"
                 title="SQL"
               />
+              </a>
               <img
                 class="grow-rotate icon-about"
                 src="../assets/img/icon_javascript.png"
@@ -290,8 +292,8 @@ export default {
 };
 </script>
 
-<style>
-.component-fade-enter-active,
+ <style>
+/* .component-fade-enter-active,
 .component-fade-leave-active {
   transition: opacity 0.3s ease;
 }
@@ -581,5 +583,5 @@ div a.tooltips[data]:hover:after{
 .grow-rotate2:active {
   -webkit-transform: scale(1.1) rotate(-4deg);
   transform: scale(1.1) rotate(-4deg);
-}
+} 
 </style>

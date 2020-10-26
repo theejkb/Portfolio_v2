@@ -5,8 +5,9 @@
         <div v-for="project in projects" :key="project.title" class="card">
           <img
             class="card-img-top"
-            v-if='project.image' src="../assets/img/kosmood_bg.png"
+            v-if='project.image' :src="getImgUrl(project.image)"
             alt="Card image cap"
+            
           />
           <img 
             class="card-img-top"
@@ -33,18 +34,38 @@ export default {
     projects: [
       {
         title: "Kosmood",
-        image: "../assets/img/kosmood_bg.png",
+        image: "kosmood_bg.png",
         description:
           "Création d'un site web générateur de moodboard pour les personnes en manque d'inspiration graphique",
+        link: "https://www.kosmood.com/",
+        stack: [
+          "vuejs",
+          "symfony",
+          "scss",
+          "html",
+        ],
       },
       {
         title: "YWYMobilier",
         image: "",
         description:
-          "Projet de B3 : Création d'un site ainsi qu'une application qui met en relation les propriétaires d'appartement et les etudiants en recherche",
+          "Projet de B3 : Création d'un site et d'une application qui met en relation les propriétaires d'appartement à Lyon et les etudiants en recherche d'appartement sur Lyon",
       },
+      {
+        title: "RadioCalade",
+        image: "radiocalade.png",
+        description:
+          "Stage de deuxième année de BTS - Projet de refonte intégrale du site web de la radio local de Villefranche-sur-Saône",
+        link: "https://www.radio-calade.fr/",
+
+      }
     ],
   }),
+  methods: {
+    getImgUrl(image) {
+    return require('../assets/img/' + image)
+}
+  }
 };
 </script>
 
@@ -71,7 +92,28 @@ export default {
   margin-right: 3%;
   margin-bottom: 10%;
   padding: 50px 50px;
-  text-shadow: 0.1em 0.1em #000;
   box-shadow: 0px 0px 49px -14px rgba(0, 0, 0, 0.75);
+}
+
+.card{
+  padding: 5px;
+  border-radius: 10px;
+}
+/* .card:hover{
+  width: 300%;
+  height: ;
+} */
+
+.card-title{
+  color:black;
+}
+
+.card-text{
+  color: black;
+  text-align: justify;
+}
+.card-img-top{
+  max-width: 225px;
+  border-radius: 10px;
 }
 </style>

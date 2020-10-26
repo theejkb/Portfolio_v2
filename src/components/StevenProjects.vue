@@ -1,83 +1,77 @@
 <template>
-
-  <div >
-      <section class="page-section cta">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-9 mx-auto">
-              <div class="cta-inner text-center rounded">
-                <h2 class="section-heading mb-5">
-                  <span class="section-heading-upper">Come On In</span>
-                  <span class="section-heading-lower">We're Open</span>
-                </h2>
-                <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
-                  <li class="list-unstyled-item list-hours-item d-flex">
-                    Sunday
-                    <span class="ml-auto">Closed</span>
-                  </li>
-                  <li class="list-unstyled-item list-hours-item d-flex">
-                    Monday
-                    <span class="ml-auto">7:00 AM to 8:00 PM</span>
-                  </li>
-                  <li class="list-unstyled-item list-hours-item d-flex">
-                    Tuesday
-                    <span class="ml-auto">7:00 AM to 8:00 PM</span>
-                  </li>
-                  <li class="list-unstyled-item list-hours-item d-flex">
-                    Wednesday
-                    <span class="ml-auto">7:00 AM to 8:00 PM</span>
-                  </li>
-                  <li class="list-unstyled-item list-hours-item d-flex">
-                    Thursday
-                    <span class="ml-auto">7:00 AM to 8:00 PM</span>
-                  </li>
-                  <li class="list-unstyled-item list-hours-item d-flex">
-                    Friday
-                    <span class="ml-auto">7:00 AM to 8:00 PM</span>
-                  </li>
-                  <li class="list-unstyled-item list-hours-item d-flex">
-                    Saturday
-                    <span class="ml-auto">9:00 AM to 5:00 PM</span>
-                  </li>
-                </ul>
-                <p class="address mb-5">
-                  <em>
-                    <strong>1116 Orchard Street</strong>
-                    <br>
-                    Golden Valley, Minnesota
-                  </em>
-                </p>
-                <p class="mb-0">
-                  <small>
-                    <em>Call Anytime</em>
-                  </small>
-                  <br>
-                  (317) 585-8468
-                </p>
-              </div>
-            </div>
+  <div class="projects">
+    <div class="projects-section">
+      <div class="card-columns">
+        <div v-for="project in projects" :key="project.title" class="card">
+          <img
+            class="card-img-top"
+            v-if='project.image' src="../assets/img/kosmood_bg.png"
+            alt="Card image cap"
+          />
+          <img 
+            class="card-img-top"
+            v-else src="../assets/img/vuejs.png"
+            alt="no image for this project"
+            />
+          <div class="card-body">
+            <h5 class="card-title">{{project.title}}</h5>
+            <p class="card-text">
+             {{project.description}}
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
   </div>
-
-
-
 </template>
 
 <script>
 export default {
-  name: 'StevenProjects',
-  props: {
-
-  },
-  data:()=>({
-
-  })
-}
+  name: "StevenProjects",
+  props: {},
+  data: () => ({
+    projects: [
+      {
+        title: "Kosmood",
+        image: "../assets/img/kosmood_bg.png",
+        description:
+          "Création d'un site web générateur de moodboard pour les personnes en manque d'inspiration graphique",
+      },
+      {
+        title: "YWYMobilier",
+        image: "",
+        description:
+          "Projet de B3 : Création d'un site ainsi qu'une application qui met en relation les propriétaires d'appartement et les etudiants en recherche",
+      },
+    ],
+  }),
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+.projects {
+  background: url(../assets/img/projects_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center !important;
+  width: 100%;
+  height: 100% !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
 
+.projects-section {
+  float: right;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 67%;
+  margin-top: 3%;
+  margin-right: 3%;
+  margin-bottom: 10%;
+  padding: 50px 50px;
+  text-shadow: 0.1em 0.1em #000;
+  box-shadow: 0px 0px 49px -14px rgba(0, 0, 0, 0.75);
+}
 </style>

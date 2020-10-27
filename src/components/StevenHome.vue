@@ -59,6 +59,6 @@ export default {
 }
 .home-section-text-v{
   width: 70px;
-  margin-top: -20px; 
+  margin-top: -19px; 
 }
 </style>

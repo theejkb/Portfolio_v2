@@ -56,6 +56,7 @@ export default {
   top: 30%;
   left: -200px;
   z-index: 99;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .navbar ul li {

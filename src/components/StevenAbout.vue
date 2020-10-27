@@ -23,7 +23,9 @@
               <li>La courbe d'apprentissage étant casiment infinie, il est nécessaire d'apprendre en permanence</li>
             </ul>
           </div>
+
           <hr />
+
           <h2 class="aboutme-section-stack">Stack Technique</h2>
           <section class="aboutme-section-stack-tech">
             <div class="aboutme-section-column front">Front</div>
@@ -31,131 +33,84 @@
           </section>
           <section class="aboutme-section-stack-tech">
             <div class="aboutme-section-column">
-              <a class="tooltips" data="HTML"><img
-                class="grow-rotate icon-about"
-                src="../assets/img/icon_html.png"
-                data="SQL"
-              />
+              <a class="tooltips" data="HTML">
+                <img class="grow-rotate icon-about" src="../assets/img/icon_html.png" />
               </a>
               <a class="tooltips" data="CSS">
-              <img
-                class="grow-rotate2 icon-about"
-                src="../assets/img/icon_css.png"
-                title="SQL"
-              />
+                <img class="grow-rotate2 icon-about" src="../assets/img/icon_css.png" />
               </a>
-              <img
-                class="grow-rotate icon-about"
-                src="../assets/img/icon_javascript.png"
-                title="SQL"
-              />
-              <img
-                class="grow-rotate2 icon-about"
-                src="../assets/img/vuejs.png"
-                title="SQL"
-              />
-              <img
-                class="grow-rotate icon-about"
-                src="../assets/img/icon_bootstrap.png"
-                title="SQL"
-              />
-              <!-- <i class="fab fa-html5 fa-3x grow-rotate" title="HTML"></i>
-              <i class="fab fa-css3-alt fa-3x grow-rotate2" title="CSS"></i>
-              <i class="fab fa-bootstrap fa-3x grow-rotate" title="Bootstrap"></i>
-              <i class="fab fa-vuejs fa-3x grow-rotate2" title="Vuejs / VueCLI"></i>
-              <i class="fab fa-js-square fa-3x grow-rotate" title="Javascript"></i> -->
-              <img
-                class="grow-rotate2 icon-about"
-                src="../assets/img/icon_vuetify.png"
-                title="SQL"
-              />
+              <a class="tooltips1" data="Javascript">
+                <img class="grow-rotate icon-about" src="../assets/img/icon_javascript.png" />
+              </a>
+              <a class="tooltips1" data="VueJs">
+                <img class="grow-rotate2 icon-about" src="../assets/img/vuejs.png" />
+              </a>
+              <a class="tooltips1" data="Bootstrap">
+                <img class="grow-rotate icon-about" src="../assets/img/icon_bootstrap.png" />
+              </a>
+              <a class="tooltips1" data="Vuetify">              
+                <img class="grow-rotate2 icon-about" src="../assets/img/icon_vuetify.png" />
+              </a>
             </div>
             <div class="aboutme-section-column">
-              <img
-                class="grow-rotate icon-about"
-                src="../assets/img/icon_laravel.png"
-                title="SQL"
-              /><img
-                class="grow-rotate2 icon-about"
-                src="../assets/img/icon_symfony.png"
-                title="SQL"
-              /><img
-                class="grow-rotate2 icon-about"
-                src="../assets/img/icon_php.png"
-                title="SQL"
-              /><img
-                class="grow-rotate icon-about"
-                src="../assets/img/icon_java.png"
-                title="SQL"
-              /><img
-                class="grow-rotate2 icon-about"
-                src="../assets/img/icon_sql.png"
-                title="SQL"
-              />
-              <!-- <i class="fab fa-laravel fa-3x grow-rotate2" title="Laravel"></i>
-              <i class="fab fa-symfony fa-3x grow-rotate" title="Symfony"></i>
-              <i class="fab fa-wordpress fa-3x grow-rotate2" title="Wordpress"></i>
-              <i class="fab fa-php fa-3x grow-rotate" title="Php"></i>
-              <i class="fab fa-java fa-3x grow-rotate2" title="Java"></i> -->
-        
+              <a class="tooltips1" data="Laravel">
+              <img class="grow-rotate icon-about" src="../assets/img/icon_laravel.png" />
+              </a>
+              <a class="tooltips1" data="Symfony">
+              <img class="grow-rotate2 icon-about" src="../assets/img/icon_symfony.png" />
+              </a>
+              <a class="tooltips1" data="PHP">
+              <img class="grow-rotate2 icon-about" src="../assets/img/icon_php.png" />
+              </a>
+              <a class="tooltips" data="Java">
+              <img class="grow-rotate icon-about" src="../assets/img/icon_java.png" />
+              </a>
+              <a class="tooltips" data="SQL">
+              <img class="grow-rotate2 icon-about" src="../assets/img/icon_sql.png" />
+              </a>             
             </div>
           </section>
+
           <h4 class="aboutme-section-transverse-title">Compétences transverses</h4>
-          <div class="aboutme-section-transverse">
-            <img
-                class="grow-rotate icon-about"
-                src="../assets/img/icon_wordpress.png"
-                title="SQL"
-              />
-            <img
-                class="grow-rotate icon-about"
-                src="../assets/img/icon_github.png"
-                title="GitHub"
-              /><img
-                class="grow-rotate2 icon-about"
-                src="../assets/img/icon_gitlab.png"
-                title="SQL"
-              /><img
-                class="grow-rotate icon-about"
-                src="../assets/img/icon_trello.png"
-                title="SQL"
-              /><img
-                class="grow-rotate2 icon-about"
-                src="../assets/img/icon_docker.png"
-                title="SQL"
-              /><img
-                class="grow-rotate icon-about"
-                src="../assets/img/icon_wix.png"
-                title="SQL"
-              /><img
-                class="grow-rotate2 icon-about"
-                src="../assets/img/icon_node.png"
-                title="SQL"
-              /><img
-                class="grow-rotate icon-about"
-                src="../assets/img/icon_shopify.png"
-                title="SQL"
-              />
-            <!-- <i class="fab fa-github fa-3x grow-rotate2" title="GitHub"></i>
-            <i class="fab fa-gitlab fa-3x grow-rotate" title="GitLab"></i>
-            <i class="fab fa-trello fa-3x grow-rotate2" title="Trello"></i>
-            <i class="fab fa-shopify fa-3x grow-rotate" title="Shopify"></i>
-            <i class="fab fa-docker fa-3x grow-rotate2" title="Docker"></i>
-            <i class="fab fa-wix fa-3x grow-rotate" title="Wix"></i>
-            <i class="fab fa-node fa-3x grow-rotate2" title="NodeJs"></i> -->
+          <div class="aboutme-section-transverse">    
+            <a class="tooltips" data="Wordpress">
+            <img class="grow-rotate icon-about" src="../assets/img/icon_wordpress.png" />
+            </a>
+            <a class="tooltips" data="GitHub">
+            <img class="grow-rotate icon-about" src="../assets/img/icon_github.png" />
+            </a>
+            <a class="tooltips" data="GitLab">
+            <img class="grow-rotate2 icon-about" src="../assets/img/icon_gitlab.png" />
+            </a>
+            <a class="tooltips" data="Trello">
+            <img class="grow-rotate icon-about" src="../assets/img/icon_trello.png" />
+            </a>
+            <a class="tooltips" data="Docker">
+            <img class="grow-rotate2 icon-about" src="../assets/img/icon_docker.png" />
+            </a>
+            <a class="tooltips" data="Wix">
+            <img class="grow-rotate icon-about" src="../assets/img/icon_wix.png" />
+            </a>
+            <a class="tooltips" data="NodeJs">
+            <img class="grow-rotate2 icon-about" src="../assets/img/icon_node.png" />
+            </a>
+            <a class="tooltips" data="Shopify">
+            <img class="grow-rotate icon-about" src="../assets/img/icon_shopify.png" />
+            </a>        
           </div>
+
           <hr />
+
           <h2 class="aboutme-section-parcours">Mon Parcours</h2>
           <v-timeline>
             <v-timeline-item v-for="(school, i) in schools" :key="i" :color="school.color" small>
               <template v-slot:opposite>
+                 <span class="headline font-weight-bold">{{school.year}}</span>
+                 <br>
                 <span class="headline font-weight-bold">{{school.school}}</span>
                 <br />
                 <i class="fas fa-map-marker-alt"></i>
-                <span class>{{school.location}}</span>
-                <br />
-                <br />
-                <span class="headline font-weight-bold">{{school.year}}</span>
+                <span class> {{school.location}}</span>               
               </template>
               <div class="py-4">
                 <h2>{{school.title}}</h2>
@@ -183,8 +138,8 @@
           <component v-bind:is="view"></component>
         </div>
       </div>
-      </transition>
-      <transition
+    </transition>
+    <transition
       name="custom-classes-transition"
       enter-active-class="animated fadeInLeft"
       leave-active-class="animated fadeOutLeft"
@@ -234,7 +189,6 @@
             amet, inventore tempora nesciunt itaque laborum ipsum eligendi ullam
             nihil necessitatibus dolores commodi soluta!
           </p>
-
         </div>
         <button @click="show = !show" class="icon icon-back aboutmore-btn-retour">
           <a class="icon-back">
@@ -243,8 +197,7 @@
           </a>
         </button>
       </div>
-      </transition>
-    
+    </transition>
   </div>
 </template>
 
@@ -293,15 +246,6 @@ export default {
 </script>
 
  <style>
-/* .component-fade-enter-active,
-.component-fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-.component-fade-enter, .component-fade-leave-to
-/* .component-fade-leave-active avant la 2.1.8 */ {
-  opacity: 0;
-}
-
 .about {
   height: 100% !important;
   background-position: center !important;
@@ -423,21 +367,49 @@ div img.icon-about {
   width: 100% !important;
 }
 
-div a.tooltips{
+div a.tooltips {
   display: inline;
 }
 
-div a.tooltips:hover{
+div a.tooltips:hover {
   position: relative;
 }
 
-div a.tooltips[data]:hover:after{
+div a.tooltips[data]:hover:after {
   content: attr(data);
   padding: 4px 8px;
   color: #333;
   position: absolute;
   left: 0;
-  top: 250%;
+  top: 230%;
+  white-space: nowrap;
+  z-index: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #222;
+  -webkit-box-shadow: 0px 0px 4px #222;
+  box-shadow: 0px 0px 4px #222;
+  text-shadow: none !important;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+div a.tooltips1 {
+  display: inline;
+}
+
+div a.tooltips1:hover {
+  position: relative;
+}
+
+div a.tooltips1[data]:hover:after {
+  content: attr(data);
+  padding: 4px 8px;
+  color: #333;
+  position: absolute;
+  left: 0;
+  bottom: 230%;
   white-space: nowrap;
   z-index: 20px;
   -moz-border-radius: 5px;
@@ -583,5 +555,5 @@ div a.tooltips[data]:hover:after{
 .grow-rotate2:active {
   -webkit-transform: scale(1.1) rotate(-4deg);
   transform: scale(1.1) rotate(-4deg);
-} 
+}
 </style>

@@ -97,6 +97,7 @@ export default {
   display: inline-block;
   width: 100%;
   position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -113,8 +114,16 @@ export default {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #fff; 
+    background:rgba(255, 255, 255, 0.7); 
     border-radius: 2px;
+    transition: 0.3s ease-in;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:rgba(255, 255, 255, 0.9); 
+    border-radius: 2px;
+    transition: 0.3s ease-in;
+
 }
 
 /* Track */

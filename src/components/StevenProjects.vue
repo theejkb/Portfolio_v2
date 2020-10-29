@@ -19,20 +19,23 @@
             <h5 class="card-title">{{project.title}}</h5>
             <p class="card-text">{{project.description}}</p>
             <br />
-            <div class="img-pin-display" v-for="stack in project.stack" :key="stack">
-              <a class="tooltips" :data="stack">
+            <div class="img-pin-display" v-for="(stack, idx) in project.stack" :key="idx">
+              <a v-if="isEven(idx)" class="tooltips" :data="stack">
                 <img class="card-img-pin grow-rotate" :src="getImgUrlIcon(stack)" />
+              </a>
+              <a v-else class="tooltips" :data="stack">
+                <img class="card-img-pin grow-rotate2" :src="getImgUrlIcon(stack)" />
               </a>
             </div>
             <br />
             <br />
           </div>
-          <v-btn
+          <!-- <v-btn
             class="ma-2 seemorebtn"
             @click="showModal = true"
             outlined
             color="indigo"
-          >Découvrir ce projet</v-btn>
+          >Découvrir ce projet</v-btn> -->
           <modal v-if="showModal">
             <transition name="modal">
               <div class="modal-mask">
@@ -78,6 +81,7 @@ export default {
       {
         title: "Kosmood",
         image: "kosmood_bg.png",
+        apercu: "",
         description:
           "Création d'un site web générateur de moodboard pour les personnes en manque d'inspiration graphique. Projet YDAYS de B3 en équipe de 5 développeur et 3 graphistes.",
         link: "https://www.kosmood.com/",
@@ -85,7 +89,7 @@ export default {
       },
       {
         title: "YWYMobilier",
-        image: "",
+        image: "ywymobilier.png",
         description:
           "Création d'un site et d'une application qui met en relation les propriétaires d'appartement à Lyon et les etudiants en recherche d'appartement sur Lyon. Projet à deux en B3",
         stack: ["flutter", "symfony", "css", "html", "bootstrap"]
@@ -102,7 +106,7 @@ export default {
         title: "Portfolio",
         image: "portfolio_project.png",
         description:
-          "Création d'un site web personnel pour montrer mes capacités mais aussi pour m'entrainer et créer du contenu",
+          "Création d'un site web personnel car, pour moi, c'est primordial en tant que développeur d'avoir son site internet portfolio.",
         link: "https://www.radio-calade.fr/",
         stack: ["vuejs", "html", "css", "vuetify", "bootstrap"]
       }
@@ -118,12 +122,17 @@ export default {
       } else {
         return require("../assets/img/icon_" + image + ".png");
       }
+    },
+    isEven(idx){
+      if (idx%2 == 0)
+        return true
+      else
+        return false
     }
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .projects {
   background: url(../assets/img/projects_bg.jpg) no-repeat;
@@ -151,20 +160,18 @@ export default {
 .card {
   padding: 5px;
   border-radius: 10px;
-  width: 24rem;
+  width: 21rem;
   margin-bottom: 25px;
-  /* margin-right: 25px; */
   transition: 0.3s ease-out;
 }
 
 .card:hover {
   padding: 5px;
   border-radius: 10px;
-  width: 25rem;
+  width: 26rem;
   margin-bottom: 25px;
   box-shadow: 0px 0px 49px -14px rgba(0, 0, 0, 0.75);
   transition: 0.3s ease-out;
-  /* margin-right: 25px; */
 }
 
 .card-title {

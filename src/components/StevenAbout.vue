@@ -48,55 +48,55 @@
               <a class="tooltips1" data="Bootstrap">
                 <img class="grow-rotate icon-about" src="../assets/img/icon_bootstrap.png" />
               </a>
-              <a class="tooltips1" data="Vuetify">              
+              <a class="tooltips1" data="Vuetify">
                 <img class="grow-rotate2 icon-about" src="../assets/img/icon_vuetify.png" />
               </a>
             </div>
             <div class="aboutme-section-column">
               <a class="tooltips1" data="Laravel">
-              <img class="grow-rotate icon-about" src="../assets/img/icon_laravel.png" />
+                <img class="grow-rotate icon-about" src="../assets/img/icon_laravel.png" />
               </a>
               <a class="tooltips1" data="Symfony">
-              <img class="grow-rotate2 icon-about" src="../assets/img/icon_symfony.png" />
+                <img class="grow-rotate2 icon-about" src="../assets/img/icon_symfony.png" />
               </a>
               <a class="tooltips1" data="PHP">
-              <img class="grow-rotate2 icon-about" src="../assets/img/icon_php.png" />
+                <img class="grow-rotate2 icon-about" src="../assets/img/icon_php.png" />
               </a>
               <a class="tooltips" data="Java">
-              <img class="grow-rotate icon-about" src="../assets/img/icon_java.png" />
+                <img class="grow-rotate icon-about" src="../assets/img/icon_java.png" />
               </a>
               <a class="tooltips" data="SQL">
-              <img class="grow-rotate2 icon-about" src="../assets/img/icon_sql.png" />
-              </a>             
+                <img class="grow-rotate2 icon-about" src="../assets/img/icon_sql.png" />
+              </a>
             </div>
           </section>
 
           <h4 class="aboutme-section-transverse-title">Compétences transverses</h4>
-          <div class="aboutme-section-transverse">    
+          <div class="aboutme-section-transverse">
             <a class="tooltips" data="Wordpress">
-            <img class="grow-rotate icon-about" src="../assets/img/icon_wordpress.png" />
+              <img class="grow-rotate icon-about" src="../assets/img/icon_wordpress.png" />
             </a>
             <a class="tooltips" data="GitHub">
-            <img class="grow-rotate icon-about" src="../assets/img/icon_github.png" />
+              <img class="grow-rotate icon-about" src="../assets/img/icon_github.png" />
             </a>
             <a class="tooltips" data="GitLab">
-            <img class="grow-rotate2 icon-about" src="../assets/img/icon_gitlab.png" />
+              <img class="grow-rotate2 icon-about" src="../assets/img/icon_gitlab.png" />
             </a>
             <a class="tooltips" data="Trello">
-            <img class="grow-rotate icon-about" src="../assets/img/icon_trello.png" />
+              <img class="grow-rotate icon-about" src="../assets/img/icon_trello.png" />
             </a>
             <a class="tooltips" data="Docker">
-            <img class="grow-rotate2 icon-about" src="../assets/img/icon_docker.png" />
+              <img class="grow-rotate2 icon-about" src="../assets/img/icon_docker.png" />
             </a>
             <a class="tooltips" data="Wix">
-            <img class="grow-rotate icon-about" src="../assets/img/icon_wix.png" />
+              <img class="grow-rotate icon-about" src="../assets/img/icon_wix.png" />
             </a>
             <a class="tooltips" data="NodeJs">
-            <img class="grow-rotate2 icon-about" src="../assets/img/icon_node.png" />
+              <img class="grow-rotate2 icon-about" src="../assets/img/icon_node.png" />
             </a>
             <a class="tooltips" data="Shopify">
-            <img class="grow-rotate icon-about" src="../assets/img/icon_shopify.png" />
-            </a>        
+              <img class="grow-rotate icon-about" src="../assets/img/icon_shopify.png" />
+            </a>
           </div>
 
           <hr />
@@ -105,12 +105,12 @@
           <v-timeline>
             <v-timeline-item v-for="(school, i) in schools" :key="i" :color="school.color" small>
               <template v-slot:opposite>
-                 <span class="headline font-weight-bold">{{school.year}}</span>
-                 <br>
+                <span class="headline font-weight-bold">{{school.year}}</span>
+                <br />
                 <span class="headline font-weight-bold">{{school.school}}</span>
                 <br />
                 <i class="fas fa-map-marker-alt"></i>
-                <span class> {{school.location}}</span>               
+                <span class>{{school.location}}</span>
               </template>
               <div class="py-4">
                 <h2>{{school.title}}</h2>
@@ -127,14 +127,14 @@
             </v-timeline-item>
           </v-timeline>
           <br />
-          <v-btn
+          <!-- <v-btn
             class="btn-aboutmore grow-shadow"
             name="view"
             :value="view"
             @click="show = showmore"
             rounded
             elevation="24"
-          >En savoir plus sur moi</v-btn>
+          >En savoir plus sur moi</v-btn> -->
           <component v-bind:is="view"></component>
         </div>
       </div>
@@ -146,7 +146,47 @@
       key="about"
     >
       <div v-if="!show" class="aboutme-section-more" key="aboutmore">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>      
         <div class="aboutme-section-text">
+           
+          <p>
+            Je suis passionné par les sports à moteur et plus particulièrement par la Moto. Depuis mon jeune âge, je pratique la moto-cross. Ce sport de fait sur terrain homologué et nécessite une licence pilote. 
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            aliquid obcaecati est repellat impedit deleniti voluptas
+            amet, inventore tempora nesciunt itaque laborum ipsum eligendi ullam
+            nihil necessitatibus dolores commodi soluta!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            aliquid obcaecati est repellat impedit deleniti voluptas
+            amet, inventore tempora nesciunt itaque laborum ipsum eligendi ullam
+            nihil necessitatibus dolores commodi soluta!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            aliquid obcaecati est repellat impedit deleniti voluptas
+            amet, inventore tempora nesciunt itaque laborum ipsum eligendi ullam
+            nihil necessitatibus dolores commodi soluta!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            aliquid obcaecati est repellat impedit deleniti voluptas
+            amet, inventore tempora nesciunt itaque laborum ipsum eligendi ullam
+            nihil necessitatibus dolores commodi soluta!
+          </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             aliquid obcaecati est repellat impedit deleniti voluptas
@@ -195,7 +235,8 @@
             <i class="fa fa-chevron-circle-left icon"></i>
             Retour
           </a>
-        </button>
+        </button>       
+         
       </div>
     </transition>
   </div>
@@ -283,8 +324,6 @@ export default {
 }
 
 .aboutme-section-more {
-  background: url(../assets/img/aboutmore_bg.jpg) no-repeat;
-  background-size: cover;
   background-position: center !important;
   width: 100%;
   height: 100% !important;
@@ -292,7 +331,10 @@ export default {
   top: 0;
   left: 0;
   overflow-y: auto;
-}
+  background: rgb(62,27,27);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(181,190,252,1) 100%);
+  background-size: cover;
+} 
 
 .aboutme-section-text-intro {
   color: #fff;
@@ -444,7 +486,8 @@ div a.tooltips1[data]:hover:after {
 
 .aboutmore-btn-retour {
   margin-top: 5%;
-  margin-left: 15%;
+  margin-left: 3%;
+  position: fixed;
   width: 10%;
 }
 .aboutmore-btn-retour a {
@@ -555,5 +598,140 @@ div a.tooltips1[data]:hover:after {
 .grow-rotate2:active {
   -webkit-transform: scale(1.1) rotate(-4deg);
   transform: scale(1.1) rotate(-4deg);
+}
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Exo", sans-serif;
+}
+
+.context {
+  width: 100%;
+  position: absolute;
+  top: 50vh;
+}
+
+.context h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+}
+
+
+
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 142%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
 }
 </style>

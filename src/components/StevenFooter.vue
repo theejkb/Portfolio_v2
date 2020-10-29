@@ -78,7 +78,8 @@ export default {
   name: "StevenFooter",
   props: {},
   data: () => ({}),
-  computed: {}
+  computed: {},
+  
 };
 </script>
 

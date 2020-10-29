@@ -1,16 +1,4 @@
-<template>
-  <!-- <div class="navbar">
-    <router-link to="/"><div class="bubble-wrapper">
-  <div ref="bubble" class="bubble">
-    <img class="bubble-image"
-         src="../assets/img/logo.png" />
-  </div>
-  <div ref="bubblePulse" class="bubble-pulse"></div>
-</div></router-link>
-    <router-link to="/" class="hvr-underline-from-left">HOME</router-link>
-    <router-link to="/projects" class="hvr-underline-from-left">PROJECTS</router-link>
-    <router-link to="/about" class="hvr-underline-from-left">ABOUT</router-link>
-  </div>-->
+<template>  
   <div>
     <nav class="navbar">
       <ul>
@@ -23,40 +11,79 @@
         <li>
           <router-link to="/projects">Mes projets</router-link>
         </li>
-        <li>
+        <!-- <li>
           <router-link to="/contact">Me contacter</router-link>
-        </li>
+        </li> -->
       </ul>
     </nav>
+    <div class="beta animated pulse">
+     <p class="beta-title">BETA</p> 
+      <p class="beta-text">
+        Ce site web n'est pas encore terminé.
+        <br />Il est en cours de construction
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
-
- 
-
 export default {
   name: "StevenHeader",
   props: {},
   data: () => ({
-        isRouteABoutMore: false,
+    isRouteABoutMore: false
   }),
-  created() {   
-  },
-  mounted() {
-  },      
-  methods(){  
-  }
+  created() {},
+  mounted() {},
+  methods() {}
 };
-
 </script>
 <style>
+.beta {
+  position: fixed;
+  bottom: -130px;
+  color: black;
+  background-color: #fff;
+  font-weight: 700;
+  left: 150px;
+  border-radius: 15px 15px 0px 0px;
+  width: 100px;
+  z-index: 99;
+  transition: all ease 0.3s;
+  animation-iteration-count: 5; 
+  animation-delay: 5s;
+
+}
+
+.beta-text {
+  margin-top: 25px;
+  color: black;
+  font-weight: 400;
+  font-size: 0.7em;
+  text-align: center;
+  padding: 5px;
+}
+
+.beta:hover {
+  position: fixed;
+  bottom: -10px;
+  color: black;
+  font-weight: 700;
+  left: 150px;
+  background-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  width: 100px;
+  z-index: 99;
+  transition: all ease 0.3s;
+  animation-iteration-count: 0; 
+}
+
 .navbar {
   position: fixed;
   top: 30%;
   left: -200px;
   z-index: 99;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .navbar ul li {

@@ -41,7 +41,6 @@ export default {
   margin-top: 20%;
   padding: 0 50px;
   color: #fff;
-  backdrop-filter: blur(1px);
   text-shadow: 1px 1px 2px black, 0 0 1em black;
 }
 

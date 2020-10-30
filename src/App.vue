@@ -99,51 +99,8 @@ export default {
   position: relative;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* button */
-::-webkit-scrollbar-button {
-    background: #222; 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background:rgba(255, 255, 255, 0.7); 
-    border-radius: 2px;
-    transition: 0.3s ease-in;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background:rgba(255, 255, 255, 0.9); 
-    border-radius: 2px;
-    transition: 0.3s ease-in;
-
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #000; 
-}
-
-/* The track NOT covered by the handle.
-::-webkit-scrollbar-track-piece {
-    background: #000; 
-}
-
-/* Corner */
-::-webkit-scrollbar-corner {
-    background: #999; 
-}
-
-/* Resizer */
-::-webkit-resizer {
-    background: #111; 
+html {
+  overflow-y: initial !important;
 }
 
 .fade-enter-active,

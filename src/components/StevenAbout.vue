@@ -17,10 +17,10 @@
             <p>Je m'appelle Steven Copy, j'ai 22 ans et je suis au Campus Ynov à Lyon en Mastere Informatique spécialisé en Développement Web.</p>
             <p>Le domaine de l'Informatique, et particulièrement du Web, correspond entièrement à mes attentes car :</p>
             <ul>
-              <li>ll est très vaste et en pleine croissance</li>
-              <li>Il m'apporte la liberté de reflexion (technologies, langages), de création (détails, couleurs) et d'implémentation (méthodes et outils utilisées, structuration etc.)</li>
-              <li>L'évolution des technologies et des différents Framework m'apportent un apprentissage constant</li>
-              <li>La courbe d'apprentissage étant casiment infinie, il est nécessaire d'apprendre en permanence</li>
+              <li>• ll est très vaste et en pleine croissance</li>
+              <li>• Il m'apporte la liberté de reflexion (technologies, langages), de création (détails, couleurs) et d'implémentation (méthodes et outils utilisées, structuration etc.)</li>
+              <li>• L'évolution des technologies et des différents Framework m'apportent un apprentissage constant</li>
+              <li>• La courbe d'apprentissage étant casiment infinie, il est nécessaire d'apprendre en permanence</li>
             </ul>
           </div>
 
@@ -134,7 +134,7 @@
             @click="show = showmore"
             rounded
             elevation="24"
-          >En savoir plus sur moi</v-btn> -->
+          >En savoir plus sur moi</v-btn>-->
           <component v-bind:is="view"></component>
         </div>
       </div>
@@ -147,22 +147,19 @@
     >
       <div v-if="!show" class="aboutme-section-more" key="aboutmore">
         <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>      
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
         <div class="aboutme-section-text">
-           
-          <p>
-            Je suis passionné par les sports à moteur et plus particulièrement par la Moto. Depuis mon jeune âge, je pratique la moto-cross. Ce sport de fait sur terrain homologué et nécessite une licence pilote. 
-          </p>
+          <p>Je suis passionné par les sports à moteur et plus particulièrement par la Moto. Depuis mon jeune âge, je pratique la moto-cross. Ce sport de fait sur terrain homologué et nécessite une licence pilote.</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             aliquid obcaecati est repellat impedit deleniti voluptas
@@ -235,8 +232,7 @@
             <i class="fa fa-chevron-circle-left icon"></i>
             Retour
           </a>
-        </button>       
-         
+        </button>
       </div>
     </transition>
   </div>
@@ -319,7 +315,7 @@ export default {
   margin-right: 3%;
   margin-bottom: 10%;
   padding: 50px 50px;
-  text-shadow: 0.1em 0.1em #000;
+  text-shadow: 0.07em 0.07em #000;
   box-shadow: 0px 0px 49px -14px rgba(0, 0, 0, 0.75);
 }
 
@@ -331,14 +327,19 @@ export default {
   top: 0;
   left: 0;
   overflow-y: auto;
-  background: rgb(62,27,27);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(181,190,252,1) 100%);
+  background: rgb(62, 27, 27);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(181, 190, 252, 1) 100%
+  );
   background-size: cover;
-} 
+}
 
 .aboutme-section-text-intro {
   color: #fff;
   text-align: left;
+  margin-top: 15px;
 }
 
 div.aboutme-section-text-intro p {
@@ -356,6 +357,7 @@ div.aboutme-section-text-intro p {
   transition: 0.3s ease-out;
 }
 .aboutme-section-text ul li {
+  list-style: none;
   margin-bottom: 5px;
   margin-top: 10px;
   margin-left: 25px;
@@ -401,6 +403,7 @@ section div.aboutme-section-column:first-child {
 /* back */
 section div.aboutme-section-column:last-child {
   text-align: right;
+  margin: 10px;
 }
 
 div img.icon-about {
@@ -505,6 +508,14 @@ div a.tooltips1[data]:hover:after {
   color: #fff !important;
   text-decoration: none;
 }
+span.electives{
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+
 
 /* Icon Back */
 .icon-back {
@@ -622,8 +633,73 @@ body {
   font-size: 50px;
 }
 
+.v-timeline-item {
+  display: flex;
+}
 
+@media (max-width: 763px) and (min-width: 470px) {
+  .aboutme-section-text {
+    margin: auto;
+    float: none;
+    overflow: hidden;
+    width: 70%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  span.electives{
+    color: #007bff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 12px;
+    text-decoration: underline;
+    font-weight: 700;
 
+  }
+
+  .aboutme-section-img {
+    margin: auto;
+    float: none;
+    margin-bottom: 30px;
+  }
+
+  .v-timeline-item {
+    display: inline;
+  }
+
+  .v-timeline {
+    width: 200%;
+  }
+}
+
+@media (max-width: 469px) and (min-width: 10px) {
+  .aboutme-section-text {
+    margin: auto;
+    float: none;
+    overflow: hidden;
+    font-size: 14px;
+    width: 70%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+
+  .aboutme-section-img {
+    margin: auto;
+    float: none;
+    margin-bottom: 30px;
+  }
+
+  .v-timeline-item {
+    display: inline;
+  }
+
+  .v-timeline-item__opposite {
+    margin-bottom: 50px;
+  }
+
+  .v-timeline {
+    width: 200%;
+  }
+}
 
 .circles {
   position: absolute;

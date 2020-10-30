@@ -17,32 +17,30 @@
       </ul>
     </nav>
 
-    
-
     <div class="container">
-        <div class="content">
-          <nav role="navigation">
-            <div id="menuToggle">
-              <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-              <ul id="menu">
-                <li>
-                  <router-link to="/">Accueil</router-link>
-                </li>
-                <li>
-                  <router-link to="/about">À propos</router-link>
-                </li>
-                <li>
-                  <router-link to="/projects">Mes projets</router-link>
-                </li>
-                 <!-- <li>
+      <div class="content">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input id="checkbox" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <li @click="closeMenu()">
+                <router-link to="/">Accueil</router-link>
+              </li>
+              <li @click="closeMenu()">
+                <router-link to="/about">À propos</router-link>
+              </li>
+              <li @click="closeMenu()">
+                <router-link to="/projects">Mes projets</router-link>
+              </li>
+              <!-- <li>
                   <router-link to="/contact">Me contacter</router-link>
-                </li> -->
-              </ul>
-            </div>
-          </nav>
+              </li>-->
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
 
@@ -57,24 +55,26 @@
 </template>
 
 <script>
-
 export default {
   name: "StevenHeader",
-  components: {
-  },
+  components: {},
   props: {},
   data: () => ({
     isRouteABoutMore: false
   }),
   created() {},
   mounted() {},
-  methods() {}
+  methods: {
+    closeMenu() {
+      return (document.getElementById("checkbox").checked = false);
+    }
+  }
 };
 </script>
 <style>
 .beta {
   position: fixed;
-  bottom: -130px;
+  bottom: -110px;
   color: black;
   background-color: #fff;
   font-weight: 700;
@@ -85,10 +85,16 @@ export default {
   transition: all ease 0.3s;
   animation-iteration-count: 5;
   animation-delay: 5s;
+  box-shadow: 0px 0px 49px -10px rgba(0, 0, 0, 1);
+
+}
+
+.container {
+  display: none;
 }
 
 .beta-text {
-  margin-top: 25px;
+  margin-top: -10px;
   color: black;
   font-weight: 400;
   font-size: 0.7em;
@@ -162,8 +168,8 @@ export default {
   color: #fff !important;
   width: 100% !important;
 }
-
-@media (max-width: 763px) and (min-width: 100px) {
+/* Menu Mobile */
+@media (max-width: 763px) and (min-width: 10px) {
   .navbar {
     display: none;
   }
@@ -181,22 +187,23 @@ export default {
   a:hover {
     opacity: 1;
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
   }
   .router-link-exact-active {
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
   }
   ul {
     padding: 0;
     list-style-type: none;
   }
 
+
   .container {
     margin-top: 0px;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
     max-width: 730px !important;
     width: 720px;
     display: flex;
@@ -206,20 +213,19 @@ export default {
   .content {
     width: 100%;
     height: 600px;
-    background-color: #f5f6fa;
+    background-color: #ffffff;
     overflow: hidden;
   }
   nav {
-    background-color: #1e1e23;
     height: 50px;
   }
-
+/* Menu Burger */
   #menuToggle {
     display: flex;
     flex-direction: column;
     position: relative;
     top: 25px;
-    left: 25px;
+    left: 15px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -274,11 +280,10 @@ export default {
   #menu {
     position: absolute;
     width: 100%;
-    box-shadow: 0 0 10px #85888c;
-    margin: -50px 0 0 -50px;
+    margin: -16px !important;
     padding: 50px;
-    padding-top: 125px;
-    background-color: #f5f6fa;
+    padding-top: 55px;
+    background-color: #ffffff;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
@@ -289,16 +294,40 @@ export default {
     padding: 10px 0;
     transition-delay: 2s;
   }
-  #menu li:focus {
-    transform: none;
-  }
 
   #menuToggle input:checked ~ ul {
     transform: none;
   }
 
-}
+  .beta {
+    position: fixed;
+    bottom: -120px;
+    color: black;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    left: 40px;
+    border-radius: 15px 15px 0px 0px;
+    width: 70px;
+    z-index: 99;
+    transition: all ease 0.3s;
+    animation-iteration-count: 5;
+    animation-delay: 5s;
+  }
 
+  .beta-text {
+    margin-top: -10px;
+  }
+
+  .beta:hover {
+    bottom: -10px;
+    left: 40px;
+    width: 70px;
+    transition: all ease 0.3s;
+    animation-iteration-count: 0;
+  }
+}
+/* Menu Tablette */
 @media (max-width: 1023px) and (min-width: 764px) {
   .navbar ul li a {
     color: #333;
@@ -310,7 +339,7 @@ export default {
     line-height: 75px;
     text-align: right;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 21px;
     text-transform: uppercase;
     font-weight: 700;
     padding-right: 25px;
@@ -320,7 +349,7 @@ export default {
   .navbar {
     position: fixed;
     top: 30%;
-    left: -230px;
+    left: -200px;
     z-index: 99;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
@@ -332,17 +361,35 @@ export default {
 
   .beta {
     position: fixed;
-    bottom: -130px;
+    bottom: -110px;
     color: black;
     background-color: #fff;
     font-weight: 700;
-    left: 100px;
+    left: 80px;
     border-radius: 15px 15px 0px 0px;
     width: 100px;
     z-index: 99;
     transition: all ease 0.3s;
     animation-iteration-count: 5;
     animation-delay: 5s;
+  }
+
+  .beta-text {
+    margin-top: -10px;
+  }
+
+  .beta:hover {
+    position: fixed;
+    bottom: -10px;
+    color: black;
+    font-weight: 700;
+    left: 80px;
+    background-color: #fff;
+    border-radius: 15px 15px 0px 0px;
+    width: 100px;
+    z-index: 99;
+    transition: all ease 0.3s;
+    animation-iteration-count: 0;
   }
 }
 </style>

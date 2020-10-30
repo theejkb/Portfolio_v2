@@ -57,4 +57,42 @@ export default {
   width: 70px;
   margin-top: -19px;
 }
+
+@media (max-width: 763px) and (min-width: 470px) {
+  .home-section-text {
+    float: none;
+    margin: auto;
+    width: 70%;
+    margin-top: 25%;
+    padding: 0px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+  }
+}
+
+@media (max-width: 469px) and (min-width: 10px) {
+  .home-section-text {
+    float: none;
+    margin: auto;
+    width: 70%;
+    margin-top: 45%;
+    padding: 0px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+  }
+
+  .home-section h1 {
+  font-size: 58px;
+  text-transform: uppercase;
+}
+
+.home-section h4 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.home-section-text-v {
+  width: 45px;
+  margin-top: -14px;
+}
+}
 </style>

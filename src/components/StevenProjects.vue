@@ -35,14 +35,14 @@
             @click="showModal = true"
             outlined
             color="indigo"
-          >Découvrir ce projet</v-btn> -->
+          >Découvrir ce projet</v-btn>-->
           <modal v-if="showModal">
             <transition name="modal">
               <div class="modal-mask">
                 <div class="modal-wrapper">
                   <div class="modal-container">
                     <div class="modal-header">
-                     <p>{{project.title}}</p> 
+                      <p>{{project.title}}</p>
                     </div>
 
                     <div class="modal-body">
@@ -71,7 +71,6 @@
 </template>
 
 <script>
-
 export default {
   name: "StevenProjects",
   props: {},
@@ -123,19 +122,15 @@ export default {
         return require("../assets/img/icon_" + image + ".png");
       }
     },
-    isEven(idx){
-      if (idx%2 == 0)
-        return true
-      else
-        return false
+    isEven(idx) {
+      if (idx % 2 == 0) return true;
+      else return false;
     }
   }
 };
 </script>
 
 <style>
-
-
 .projects {
   background: url(../assets/img/projects_bg.jpg) no-repeat;
   background-size: cover;
@@ -259,22 +254,80 @@ export default {
   transform: scale(1.1);
 }
 
-@media (min-width: 1024px) and (max-width: 1200px){
+@media (min-width: 1024px) and (max-width: 1200px) {
   .card {
-  padding: 5px;
-  border-radius: 10px;
-  width: 18rem;
-  margin-bottom: 25px;
-  transition: 0.3s ease-out;
+    padding: 5px;
+    border-radius: 10px;
+    width: 18rem;
+    margin-bottom: 25px;
+    transition: 0.3s ease-out;
+  }
+
+  .card:hover {
+    padding: 5px;
+    border-radius: 10px;
+    width: 23rem;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 49px -14px rgba(0, 0, 0, 0.75);
+    transition: 0.3s ease-out;
+  }
 }
 
-.card:hover {
-  padding: 5px;
-  border-radius: 10px;
-  width: 22rem;
-  margin-bottom: 25px;
-  box-shadow: 0px 0px 49px -14px rgba(0, 0, 0, 0.75);
-  transition: 0.3s ease-out;
+@media (max-width: 763px) and (min-width: 470px) {
+
+  .projects-section{
+    margin: auto;
+    float: none;
+    overflow: hidden;
+    width: 70%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  .card {
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 25px;
+    transition: 0.3s ease-out;
+  }
+  
+
+  .card:hover {
+    box-shadow: 0px 0px 49px -14px rgba(0, 0, 0, 0.75);
+    transition: 0.3s ease-out;
+  }
 }
+
+@media (max-width: 470px) and (min-width: 10px) {
+
+  .card-text{
+    font-size: 12px;
+  }
+
+  .projects-section{
+    margin: auto;
+    float: none;
+    overflow: hidden;
+    width: 70%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  .card {
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 25px;
+    transition: 0.3s ease-out;
+  }
+  
+
+  .card:hover {
+    box-shadow: 0px 0px 49px -14px rgba(0, 0, 0, 0.75);
+    transition: 0.3s ease-out;
+  }
+
+  .card-img-pin{
+    max-width: 30px;
+  }
 }
 </style>

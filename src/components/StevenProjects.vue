@@ -159,6 +159,7 @@ export default {
   border-radius: 10px;
   width: 21rem;
   margin-bottom: 25px;
+  margin-top: 20px;
   transition: 0.3s ease-out;
 }
 
@@ -260,6 +261,7 @@ export default {
     border-radius: 10px;
     width: 18rem;
     margin-bottom: 25px;
+    margin-top: 20px;
     transition: 0.3s ease-out;
   }
 
@@ -284,18 +286,22 @@ export default {
     margin-bottom: 40px;
   }
   .card {
-    padding: 5px;
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 25px;
-    transition: 0.3s ease-out;
-  }
-  
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  transition: 0.3s ease-out;
+}
 
-  .card:hover {
-    box-shadow: 0px 0px 49px -14px rgba(0, 0, 0, 0.75);
-    transition: 0.3s ease-out;
-  }
+.card:hover {
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 25px;
+  box-shadow: 0px 0px 49px -14px rgba(0, 0, 0, 0.75);
+  transition: 0.3s ease-out;
+}
 }
 
 @media (max-width: 470px) and (min-width: 10px) {
@@ -318,8 +324,7 @@ export default {
     width: 100%;
     margin-bottom: 25px;
     transition: 0.3s ease-out;
-  }
-  
+  }  
 
   .card:hover {
     box-shadow: 0px 0px 49px -14px rgba(0, 0, 0, 0.75);

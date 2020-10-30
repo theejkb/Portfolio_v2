@@ -486,9 +486,9 @@ div a.tooltips1[data]:hover:after {
   text-decoration: none;
   color: #000;
 }
-
+/* Prod Bug ?? */
 .aboutme-section-stack-tech a, .aboutme-section-transverse a{
-  background-color: none !important;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .aboutmore-btn-retour {

@@ -487,6 +487,10 @@ div a.tooltips1[data]:hover:after {
   color: #000;
 }
 
+.aboutme-section-stack-tech a, .aboutme-section-transverse a{
+  background-color: none !important;
+}
+
 .aboutmore-btn-retour {
   margin-top: 5%;
   margin-left: 3%;
@@ -700,6 +704,19 @@ body {
     width: 200%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .circles {
   position: absolute;

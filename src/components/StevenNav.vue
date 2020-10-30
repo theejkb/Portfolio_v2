@@ -17,7 +17,7 @@
       </ul>
     </nav>
 
-    <div class="container">
+    <div class="container-mobile">
       <div class="content">
         <nav role="navigation">
           <div id="menuToggle">
@@ -89,7 +89,7 @@ export default {
 
 }
 
-.container {
+.container-mobile {
   display: none;
 }
 
@@ -200,12 +200,11 @@ export default {
   }
 
 
-  .container {
+  .container-mobile {
     margin-top: 0px;
     margin-right: auto !important;
     margin-left: auto !important;
     max-width: 730px !important;
-    width: 720px;
     display: flex;
     justify-content: left;
     align-items: flex-end;

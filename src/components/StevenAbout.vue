@@ -666,7 +666,7 @@ body {
   }
 
   .v-timeline-item {
-    display: inline;
+    display: inline !important;
   }
 
   .v-timeline {

@@ -134,6 +134,8 @@ export default {
 </script>
 
 <style>
+
+
 .projects {
   background: url(../assets/img/projects_bg.jpg) no-repeat;
   background-size: cover;
@@ -243,15 +245,6 @@ export default {
   float: right;
 }
 
-/*
- * The following styles are auto-applied to elements with
- * transition="modal" when their visibility is toggled
- * by Vue.js.
- *
- * You can easily play with the modal transition by editing
- * these styles.
- */
-
 .modal-enter {
   opacity: 0;
 }
@@ -264,5 +257,24 @@ export default {
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+@media (min-width: 1024px) and (max-width: 1200px){
+  .card {
+  padding: 5px;
+  border-radius: 10px;
+  width: 18rem;
+  margin-bottom: 25px;
+  transition: 0.3s ease-out;
+}
+
+.card:hover {
+  padding: 5px;
+  border-radius: 10px;
+  width: 22rem;
+  margin-bottom: 25px;
+  box-shadow: 0px 0px 49px -14px rgba(0, 0, 0, 0.75);
+  transition: 0.3s ease-out;
+}
 }
 </style>

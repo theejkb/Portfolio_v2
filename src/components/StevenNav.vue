@@ -81,7 +81,7 @@ export default {
 .navbar {
   position: fixed;
   top: 30%;
-  left: -200px;
+  left: -230px;
   z-index: 99;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -129,5 +129,9 @@ export default {
   background-color: #000 !important;
   color: #fff !important;
   width: 100% !important;
+}
+
+@media (min-width: 1024px) and (max-width: 1200px){
+  
 }
 </style>

@@ -19,6 +19,10 @@
                     </div>
                     <br />
                     <br />
+                    <v-btn v-if="project.link" primary color="black"><a :href="project.link" target="_blank" class="visit">
+                            Visiter</a></v-btn>
+                    <br />
+                    <br />
                 </div>
                 <!-- <v-btn
             class="ma-2 seemorebtn"
@@ -90,7 +94,7 @@ export default {
                 title: "Portfolio",
                 image: "portfolio_project.png",
                 description: "Création d'un site web personnel car, pour moi, c'est primordial en tant que développeur d'avoir son site internet portfolio.",
-                link: "https://www.radio-calade.fr/",
+                link: "https://stevencopy.netlify.app/#/",
                 stack: ["vuejs", "html", "css", "vuetify", "bootstrap"],
             },
             {
@@ -121,7 +125,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+a.visit {
+    text-decoration: none;
+}
+
 .projects {
     background: url(../assets/img/projects_bg.jpg) no-repeat;
     background-size: cover;

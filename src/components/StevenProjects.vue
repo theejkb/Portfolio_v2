@@ -101,7 +101,7 @@ export default {
                 title: "Music Player",
                 image: "player_app.png",
                 description: "Création d'une application PWA de musique avec playlists, songs, player...",
-                link: "https://playlistsong-4e36f.web.app/#/songs",
+                link: "https://playlistsong-4e36f.web.app/",
                 stack: ["vuejs", "html", "css", "vuetify"],
             },
         ],

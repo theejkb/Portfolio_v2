@@ -10,10 +10,10 @@
                     <p class="card-text">{{ project.description }}</p>
                     <br />
                     <div class="img-pin-display" v-for="(stack, idx) in project.stack" :key="idx">
-                        <a v-if="isEven(idx)" class="tooltips" :data="stack">
+                        <a v-if="isEven(idx)" class="tooltips1" :data="stack">
                             <img class="card-img-pin grow-rotate" :src="getImgUrlIcon(stack)" />
                         </a>
-                        <a v-else class="tooltips" :data="stack">
+                        <a v-else class="tooltips1" :data="stack">
                             <img class="card-img-pin grow-rotate2" :src="getImgUrlIcon(stack)" />
                         </a>
                     </div>
@@ -128,6 +128,33 @@ export default {
 <style scoped>
 a.visit {
     text-decoration: none;
+}
+div a.tooltips1 {
+  display: inline;
+}
+
+div a.tooltips1:hover {
+  position: relative;
+}
+
+div a.tooltips1[data]:hover:after {
+  content: attr(data);
+  padding: 4px 8px;
+  color: #333;
+  position: absolute;
+  left: 0;
+  bottom: 160%;
+  white-space: nowrap;
+  z-index: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #222;
+  -webkit-box-shadow: 0px 0px 4px #222;
+  box-shadow: 0px 0px 4px #222;
+  text-shadow: none !important;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .projects {

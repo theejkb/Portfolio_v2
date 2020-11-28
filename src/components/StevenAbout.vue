@@ -646,9 +646,8 @@ body {
     margin: auto;
     float: none;
     overflow: hidden;
-    width: 70%;
-    margin-top: 80px;
-    margin-bottom: 40px;
+    width: 100%;
+    border-radius: 0;
   }
   span.electives{
     color: #007bff;
@@ -680,9 +679,8 @@ body {
     float: none;
     overflow: hidden;
     font-size: 14px;
-    width: 70%;
-    margin-top: 80px;
-    margin-bottom: 40px;
+    width: 100%;
+    border-radius: 0;
     padding: 20px;
   }
 

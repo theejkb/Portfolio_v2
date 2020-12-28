@@ -317,6 +317,35 @@ div a.tooltips1[data]:hover:after {
 }
 
 @media (max-width: 763px) and (min-width: 470px) {
+div a.tooltips1 {
+  display: inline;
+}
+
+div a.tooltips1:hover {
+  position: relative;
+}
+
+div a.tooltips1[data]:hover:after {
+  font-size: 14px;
+  content: attr(data);
+  padding: 4px 8px;
+  color: #333;
+  position: absolute;
+  left: 0;
+  bottom: 110%;
+  white-space: nowrap;
+  z-index: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #222;
+  -webkit-box-shadow: 0px 0px 4px #222;
+  box-shadow: 0px 0px 4px #222;
+  text-shadow: none !important;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
     .projects-section {
         margin: auto;
         float: none;

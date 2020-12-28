@@ -19,8 +19,8 @@
                     </div>
                     <br />
                     <br />
-                    <v-btn v-if="project.link" primary color="black"><a :href="project.link" target="_blank" class="visit">
-                            Visiter</a></v-btn>
+                   <a :href="project.link" target="_blank" class="textVisit"> <v-btn class="btnVisit" v-if="project.link" elevation="10">
+                            Visiter</v-btn></a>
                     <br />
                     <br />
                 </div>
@@ -30,7 +30,7 @@
             outlined
             color="indigo"
           >Découvrir ce projet</v-btn>-->
-                <modal v-if="showModal">
+                <!-- <modal v-if="showModal">
                     <transition name="modal">
                         <div class="modal-mask">
                             <div class="modal-wrapper">
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                     </transition>
-                </modal>
+                </modal> -->
             </div>
             <!-- use the modal component, pass in the prop -->
         </div>
@@ -126,9 +126,24 @@ export default {
 </script>
 
 <style scoped>
-a.visit {
+
+a.textVisit {
     text-decoration: none;
+    color: darkgrey;
+    transition: 0.5s;
 }
+
+a.textVisit:hover {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s
+}
+
+.btnVisit:hover{
+  box-shadow: 0px 0px 10px rgb(0,0,0,0.5);
+}
+
+
 div a.tooltips1 {
   display: inline;
 }
@@ -192,10 +207,10 @@ div a.tooltips1[data]:hover:after {
 .card:hover {
     padding: 5px;
     border-radius: 10px;
-    width: 26rem;
+    width: 24rem;
     margin-bottom: 25px;
     box-shadow: 0px 0px 49px -14px rgba(0, 0, 0, 0.75);
-    transition: 0.3s ease-out;
+    transition: 0.5s ease-out;
 }
 
 .card-title {
